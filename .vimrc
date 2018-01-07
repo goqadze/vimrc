@@ -85,18 +85,20 @@ nmap <Leader>s :Ag<space>
 nmap <Leader>r :Gsearch<space>
 nmap <Leader><Leader>r :Greplace<space>
 
+let @b = "vi{<"
+let @f = "vi{>"
 
 "-------------Plugins--------------"
 
 "/
 "/ CtrlP
 "/
-let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
-nmap <C-S-p> :CtrlP<cr>
-nmap <C-S-r> :CtrlPBufTag<cr>
-nmap <C-S-e> :CtrlPMRUFiles<cr>
+nmap <C-p> :CtrlP<cr>
+nmap <S-r> :CtrlPBufTag<cr>
+nmap <C-e> :CtrlPMRUFiles<cr>
 "nmap <C-S-t> <Plug>PeepOpen
 
 "/
