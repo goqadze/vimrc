@@ -87,6 +87,7 @@ nmap <Leader><Leader>r :Greplace<space>
 
 let @b = "vi{<"
 let @f = "vi{>"
+let @p = "ci(Op==Aq€kb"
 
 "-------------Plugins--------------"
 
