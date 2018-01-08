@@ -138,6 +138,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+"/
+"/ VIM-JSX
+"/
+let g:jsx_ext_required = 0
 
 
 
