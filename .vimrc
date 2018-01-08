@@ -1,14 +1,14 @@
-set nocompatible              						"We want the latest Vim settings/options.
+set nocompatible              						                    "We want the latest Vim settings/options.
 
 so ~/.vim/plugins.vim
 
 syntax enable
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
-let mapleader = ',' 						    	"The default is \, but a comma is much better.
-set nonumber								"Let's activate line numbers.
-set noerrorbells visualbell t_vb=               			"No damn bells!
+let mapleader = ',' 						    	                    "The default is \, but a comma is much better.
+set nonumber								                            "Let's activate line numbers.
+set noerrorbells visualbell t_vb=               			            "No damn bells!
 set autowriteall                                                        "Automatically write the file when switching buffers.
-set complete=.,w,b,u 							"Set our desired autocompletion matching.
+set complete=.,w,b,u 							                        "Set our desired autocompletion matching.
 set tabstop=4
 set expandtab
 set softtabstop=2
@@ -17,11 +17,11 @@ set shiftwidth=2
 
 "-------------Visuals--------------"
 colorscheme atom-dark
-set t_Co=256								"Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira\ Code:h17						"Set the default font family and size.
-"set macligatures							"We want pretty symbols, when available.
-set guioptions-=e							"We don't want Gui tabs.
-set linespace=16   						        "Macvim-specific line-height.
+set t_Co=256								                            "Use 256 colors. This is useful for Terminal Vim.
+set guifont=Fira\ Code:h17						                        "Set the default font family and size.
+"set macligatures							                            "We want pretty symbols, when available.
+set guioptions-=e							                            "We don't want Gui tabs.
+"set linespace=16   						                            "Macvim-specific line-height.
 set lines=999
 set showtabline=2
 
@@ -42,15 +42,15 @@ hi vertsplit guifg=bg guibg=bg
 
 
 "-------------Search--------------"
-set hlsearch								"Highlight all matched terms.
-set incsearch								"Incrementally highlight, as we type.
+set hlsearch								                            "Highlight all matched terms.
+set incsearch								                            "Incrementally highlight, as we type.
 
 
 
 
 "-------------Split Management--------------"
-set splitbelow 								"Make splits default to below...
-set splitright								"And to the right. This feels more natural.
+set splitbelow 								                            "Make splits default to below...
+set splitright								                            "And to the right. This feels more natural.
 
 "We'll set simpler mappings to switch between splits.
 nmap <C-J> <C-W><C-J>
@@ -193,8 +193,15 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 "   similar approach works for [y|d|c|v]i[(,[,{,',",`]
 
 
+"-------------Color Fixes---------------------"
 
-set term=screen-256color
-set t_ut=
+if &term =~ '256color'
 
-                     
+  " The following two lines solve the BCE issue described here: https://sunaku.github.io/vim-256color-bce.html
+  set term=screen-256color
+  set t_ut=
+  
+  set background=dark
+  " Be sure to store your `<theme>.vim` files in ~/.vim/colors/
+  colorscheme gruvbox
+endif
