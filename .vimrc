@@ -1,14 +1,14 @@
-set nocompatible              						                    "We want the latest Vim settings/options.
+set nocompatible                                                        "We want the latest Vim settings/options.
 
 so ~/.vim/plugins.vim
 
 syntax enable
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
-let mapleader = ',' 						    	                    "The default is \, but a comma is much better.
-set number								                            "Let's activate line numbers.
-set noerrorbells visualbell t_vb=               			            "No damn bells!
+let mapleader = ','                                                     "The default is \, but a comma is much better.
+set number                                                              "Let's activate line numbers.
+set noerrorbells visualbell t_vb=                                       "No damn bells!
 set autowriteall                                                        "Automatically write the file when switching buffers.
-set complete=.,w,b,u 							                        "Set our desired autocompletion matching.
+set complete=.,w,b,u                                                    "Set our desired autocompletion matching.
 set tabstop=4
 set expandtab
 set softtabstop=2
@@ -17,11 +17,11 @@ set shiftwidth=2
 
 "-------------Visuals--------------"
 colorscheme atom-dark
-set t_Co=256								                            "Use 256 colors. This is useful for Terminal Vim.
-set guifont=Fira\ Code:h17						                        "Set the default font family and size.
-"set macligatures							                            "We want pretty symbols, when available.
-set guioptions-=e							                            "We don't want Gui tabs.
-"set linespace=16   						                            "Macvim-specific line-height.
+set t_Co=256                                                            "Use 256 colors. This is useful for Terminal Vim.
+set guifont=Fira\ Code:h17                                              "Set the default font family and size.
+"set macligatures                                                       "We want pretty symbols, when available.
+set guioptions-=e                                                       "We don't want Gui tabs.
+"set linespace=16                                                       "Macvim-specific line-height.
 set lines=999
 set showtabline=2
 
@@ -42,15 +42,15 @@ hi vertsplit guifg=bg guibg=bg
 
 
 "-------------Search--------------"
-set hlsearch								                            "Highlight all matched terms.
-set incsearch								                            "Incrementally highlight, as we type.
+set hlsearch                                                            "Highlight all matched terms.
+set incsearch                                                           "Incrementally highlight, as we type.
 
 
 
 
 "-------------Split Management--------------"
-set splitbelow 								                            "Make splits default to below...
-set splitright								                            "And to the right. This feels more natural.
+set splitbelow                                                          "Make splits default to below...
+set splitright                                                          "And to the right. This feels more natural.
 
 "We'll set simpler mappings to switch between splits.
 nmap <C-J> <C-W><C-J>
@@ -113,7 +113,7 @@ nmap <C-S-t> :NERDTreeToggle<cr>
 "
 "/ Greplace.vim
 "/
-set grepprg=ag								"We want to use Ag for the search.
+set grepprg=ag                                                            "We want to use Ag for the search.
 
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
