@@ -5,7 +5,7 @@ so ~/.vim/plugins.vim
 syntax enable
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
 let mapleader = ',' 						    	                    "The default is \, but a comma is much better.
-set nonumber								                            "Let's activate line numbers.
+set number								                            "Let's activate line numbers.
 set noerrorbells visualbell t_vb=               			            "No damn bells!
 set autowriteall                                                        "Automatically write the file when switching buffers.
 set complete=.,w,b,u 							                        "Set our desired autocompletion matching.
@@ -195,6 +195,8 @@ autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 "   ciw - change word
 "   yiw copy the word, viwp rewrite the word
 "   similar approach works for [y|d|c|v]i[(,[,{,',",`]
+"   comment/uncomment - press ctrl-V, go down or up with j or k keys, then press shift-i and type comment chars or x for uncommenting,
+"   upper/lowwercase - toggle case of the character ~, the line g~~ or V~, word to lowercase guaw, word to uppercase gUaw, line to lowercase guu, uppercase gUU 
 
 
 "-------------Color Fixes---------------------"
