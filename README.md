@@ -9,5 +9,5 @@ vim .vimrc
 ```
 
 ### Credits 
-  (https://gist.github.com/JeffreyWay/68b2cdf541e2e576aa0a)
+  * https://gist.github.com/JeffreyWay/68b2cdf541e2e576aa0a
 
