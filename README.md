@@ -1,13 +1,16 @@
 ### Setup
 
 ```
-git clone https://github.com/goqadze/vimrc.git
-rm -R .git README.md
+git clone https://github.com/goqadze/vimrc.git ~/vimrc
+cp ~/vimrc/.vimrc ~
+cp -R ~/vimrc/.vim ~
+rm -R ~/vimrc 
 apt-get install silversearcher-ag
 vim .vimrc
 :PluginInstall
 :wq
 cd [any-dir] && vim
+#press ctrl-shift-t for nerdtree
 ```
 
 ### Credits 
