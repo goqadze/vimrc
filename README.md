@@ -7,6 +7,7 @@ apt-get install silversearcher-ag
 vim .vimrc
 :PluginInstall
 :wq
+cd [any-dir] && vim
 ```
 
 ### Credits 
