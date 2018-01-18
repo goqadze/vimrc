@@ -1,7 +1,7 @@
 ### Setup
 
 ```
-git clone https://github.com/goqadze/vimrc.git ~
+git clone https://github.com/goqadze/vimrc.git
 rm -R .git README.md
 apt-get install silversearcher-ag
 vim .vimrc
