@@ -3,9 +3,10 @@
 ```
 apt-get install silversearcher-ag
 git clone https://agokadze@bitbucket.org/agokadze/vimrepo.git ~
-rm -R .git
+rm -R .git README.md
 vim .vimrc
 :PluginInstall
+:wq
 ```
 
 ### Credits 
