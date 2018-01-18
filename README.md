@@ -2,8 +2,7 @@
 
 ```
 git clone https://github.com/goqadze/vimrc.git ~/vimrc
-cp ~/vimrc/.vimrc ~
-cp -R ~/vimrc/.vim ~
+cp -R ~/vimrc/{.vim,.vimrc} ~
 rm -R ~/vimrc 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 apt-get install silversearcher-ag
