@@ -10,7 +10,6 @@ vim .vimrc
 :PluginInstall
 :wq
 cd [any-dir] && vim
-#press ctrl-shift-t for nerdtree
 ```
 
 ### Credits 
