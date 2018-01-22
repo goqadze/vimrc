@@ -28,7 +28,7 @@ Plugin 'terryma/vim-multiple-cursors'
 
 "-------------------=== Languages support ===-------------------
 Plugin 'tpope/vim-commentary'               " Comment stuff out
-Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}  " Sparkup(XML/jinja/htlm-django/etc.) support
 Plugin 'Valloric/YouCompleteMe'             " Autocomplete plugin
 
 "-------------------=== Python  ===-----------------------------
