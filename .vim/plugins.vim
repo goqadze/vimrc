@@ -24,6 +24,17 @@ Plugin 'tobyS/pdv'
 Plugin 'SirVer/ultisnips'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'terryma/vim-multiple-cursors'
+
+"-------------------=== Languages support ===-------------------
+Plugin 'tpope/vim-commentary'               " Comment stuff out
+Plugin 'mitsuhiko/vim-sparkup'              " Sparkup(XML/jinja/htlm-django/etc.) support
+Plugin 'Valloric/YouCompleteMe'             " Autocomplete plugin
+
+"-------------------=== Python  ===-----------------------------
+ Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
+ Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

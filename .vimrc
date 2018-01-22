@@ -13,6 +13,10 @@ set tabstop=4
 set expandtab
 set softtabstop=2
 set shiftwidth=2
+set clipboard=unnamed                                                   "use system clipboard
+set exrc                                                                "enable usage of additional .vimrc files from working directory
+
+
 
 
 "-------------Visuals--------------"
@@ -181,6 +185,31 @@ endfunction
 autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
+
+"-------------Python------------------"
+so ~/.vim/pythonmode.vim
+
+"-------------Syntastic---------------"
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_enable_signs=1
+let g:syntastic_check_on_wq=0
+let g:syntastic_aggregate_errors=1
+let g:syntastic_loc_list_height=5
+let g:syntastic_error_symbol='X'
+let g:syntastic_style_error_symbol='X'
+let g:syntastic_warning_symbol='x'
+let g:syntastic_style_warning_symbol='x'
+let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python3']
+
+"------------YouCompleteMe------------------"
+set completeopt-=preview
+
+let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf=0
+
+nmap <leader>g :YcmCompleter GoTo<CR>
+nmap <leader>d :YcmCompleter GoToDefinition<CR>
 
 
 
