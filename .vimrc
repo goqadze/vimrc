@@ -57,10 +57,11 @@ set splitbelow                                                          "Make sp
 set splitright                                                          "And to the right. This feels more natural.
 
 "We'll set simpler mappings to switch between splits.
-nmap <C-J> <C-W><C-J>
-nmap <C-K> <C-W><C-K>
-nmap <C-H> <C-W><C-H>
-nmap <C-L> <C-W><C-L>
+noremap <C-J> <C-W><C-J>
+noremap <C-K> <C-W><C-K>
+noremap <C-H> <C-W><C-H>
+noremap <C-L> <C-W><C-L>
+
 
 
 
@@ -201,12 +202,20 @@ let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
 let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python3']
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+
 
 "------------YouCompleteMe------------------"
 set completeopt-=preview
 
 let g:ycm_global_ycm_extra_conf='~/.vim/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<c-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-k>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<c-j>'
+
 
 nmap <leader>g :YcmCompleter GoTo<CR>
 nmap <leader>d :YcmCompleter GoToDefinition<CR>
