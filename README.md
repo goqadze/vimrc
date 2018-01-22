@@ -15,10 +15,11 @@ apt-get install silversearcher-ag
 apt-get install cmake
 apt-get install libpython2.7-dev
 
+vim +PluginInstall +qa
+
 #install YouCompleteMe
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer 
 
-vim +PluginInstall +qa
 cd [any-dir] && vim
 ```
 
