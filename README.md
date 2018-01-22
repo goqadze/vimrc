@@ -8,10 +8,10 @@ rm -R ~/vimrc
 #Vim plugin manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-#install silversearcher-ag for Ag and Greplace plugins
+#silversearcher-ag for Ag and Greplace plugins
 apt-get install silversearcher-ag
 
-#install for YouCompleteMe plugin
+#for YouCompleteMe plugin
 apt-get install cmake
 apt-get install --reinstall libpython2.7-dev
 
