@@ -13,7 +13,7 @@ apt-get install silversearcher-ag
 
 #for YouCompleteMe plugin
 apt-get install cmake
-apt-get install --reinstall libpython2.7-dev
+apt-get install libpython2.7-dev
 
 #install YouCompleteMe
 ~/.vim/bundle/YouCompleteMe/install.py --clang-completer 
