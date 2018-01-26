@@ -24,6 +24,8 @@ Plugin 'tobyS/pdv'
 Plugin 'SirVer/ultisnips'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'terryma/vim-multiple-cursors'
 
 "-------------------=== Languages support ===-------------------
