@@ -11,8 +11,9 @@ set autowriteall                                                        "Automat
 set complete=.,w,b,u                                                    "Set our desired autocompletion matching.
 set tabstop=4
 set expandtab
-set softtabstop=2
-set shiftwidth=2
+set softtabstop=4
+set shiftwidth=4
+au FileType javascript setl sw=2 sts=2 et 
 set clipboard=unnamed                                                   "use system clipboard
 set exrc                                                                "enable usage of additional .vimrc files from working directory
 
@@ -164,8 +165,8 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 "Automatically source the Vimrc file on save.
 
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost .vimrc source %
+  autocmd!
+  autocmd BufWritePost .vimrc source %
 augroup END
 
 
@@ -173,15 +174,15 @@ augroup END
 
 "-------------Functions--------------"
 function! IPhpInsertUse()
-    call PhpInsertUse()
-    call feedkeys('a',  'n')
+  call PhpInsertUse()
+  call feedkeys('a',  'n')
 endfunction
 autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
 autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
 
 function! IPhpExpandClass()
-    call PhpExpandClass()
-    call feedkeys('a', 'n')
+  call PhpExpandClass()
+  call feedkeys('a', 'n')
 endfunction
 autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
@@ -201,7 +202,7 @@ let g:syntastic_error_symbol='X'
 let g:syntastic_style_error_symbol='X'
 let g:syntastic_warning_symbol='x'
 let g:syntastic_style_warning_symbol='x'
-let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python3']
+let g:syntastic_python_checkers=['flake8', 'pydocstyle', 'python']
 let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 
 
@@ -219,8 +220,6 @@ let g:SuperTabDefaultCompletionType = '<c-j>'
 
 nmap <leader>g :YcmCompleter GoTo<CR>
 nmap <leader>d :YcmCompleter GoToDefinition<CR>
-
-
 
 "-------------Tips and Reminders--------------"
 " - Press 'zz' to instantly center the line where the cursor is located.
@@ -244,8 +243,8 @@ if &term =~ '256color'
   " The following two lines solve the BCE issue described here: https://sunaku.github.io/vim-256color-bce.html
   set term=screen-256color
   set t_ut=
-  
   set background=dark
   " Be sure to store your `<theme>.vim` files in ~/.vim/colors/
   colorscheme gruvbox
 endif
+

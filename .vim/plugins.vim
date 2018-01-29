@@ -22,10 +22,11 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'SirVer/ultisnips'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'honza/vim-snippets'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
-Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'terryma/vim-multiple-cursors'
 
 "-------------------=== Languages support ===-------------------
@@ -34,8 +35,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}  " Sparkup(XML/jinja/htlm-django/etc.
 Plugin 'Valloric/YouCompleteMe'             " Autocomplete plugin
 
 "-------------------=== Python  ===-----------------------------
- Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
- Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
+Plugin 'klen/python-mode'                   " Python mode (docs, refactor, lints...)
+Plugin 'scrooloose/syntastic'               " Syntax checking plugin for Vim
 
 
 " All of your Plugins must be added before the following line
