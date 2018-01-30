@@ -28,6 +28,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
 Plugin 'terryma/vim-multiple-cursors'
+"------------------=== status/tabline ===---------------
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 "-------------------=== Languages support ===-------------------
 Plugin 'tpope/vim-commentary'               " Comment stuff out
