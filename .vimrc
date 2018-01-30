@@ -153,8 +153,7 @@ let g:jsx_ext_required = 0
 "/ VIM-AIRLINE
 "/
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'luna'
-
+let g:airline_theme='badwolf'
 
 
 
