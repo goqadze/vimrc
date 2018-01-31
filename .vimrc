@@ -97,7 +97,8 @@ nnoremap <c-b>   :bnext<CR>
 
 let @b = "vi{<"
 let @f = "vi{>"
-let @p = "ci(Op==Aq€kb"
+let @p = "ci(
+Op==Aqâ‚¬kb"
 
 "-------------Plugins--------------"
 
@@ -157,7 +158,7 @@ let g:jsx_ext_required = 0
 "/ VIM-AIRLINE
 "/
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='badwolf'
+let g:airline_theme='base16'
 
 "/
 "/ TAGBAR
