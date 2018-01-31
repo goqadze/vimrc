@@ -91,6 +91,10 @@ nmap <Leader>s :Ag<space>
 nmap <Leader>r :Gsearch<space>
 nmap <Leader><Leader>r :Greplace<space>
 
+nnoremap <c-s-b> :bprevious<CR>
+nnoremap <c-b>   :bnext<CR>
+
+
 let @b = "vi{<"
 let @f = "vi{>"
 let @p = "ci(Op==Aq€kb"
@@ -154,6 +158,11 @@ let g:jsx_ext_required = 0
 "/
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='badwolf'
+
+"/
+"/ TAGBAR
+"/
+nmap <F8> :TagbarToggle<CR>
 
 
 
@@ -253,4 +262,5 @@ if &term =~ '256color'
   " Be sure to store your `<theme>.vim` files in ~/.vim/colors/
   colorscheme gruvbox
 endif
+
 
