@@ -91,8 +91,8 @@ nmap <Leader>s :Ag<space>
 nmap <Leader>r :Gsearch<space>
 nmap <Leader><Leader>r :Greplace<space>
 
-nnoremap <c-s-b> :bprevious<CR>
-nnoremap <c-b>   :bnext<CR>
+nnoremap <s-b> :bprevious<CR>
+nnoremap <c-b> :bnext<CR>
 
 
 let @b = "vi{<"
@@ -111,7 +111,6 @@ let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 nmap <C-p> :CtrlP<cr>
 nmap <S-r> :CtrlPBufTag<cr>
 nmap <C-e> :CtrlPMRUFiles<cr>
-"nmap <C-S-t> <Plug>PeepOpen
 
 "/
 "/ NERDTree
