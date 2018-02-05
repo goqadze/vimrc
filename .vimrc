@@ -97,8 +97,7 @@ nnoremap <c-b> :bnext<CR>
 
 let @b = "vi{<"
 let @f = "vi{>"
-let @p = "ci(
-Op==Aq€kb"
+let @p = "ci(Op==Aq€kb"
 
 "-------------Plugins--------------"
 
