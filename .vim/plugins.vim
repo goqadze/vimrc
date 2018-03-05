@@ -32,7 +32,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
-Plugin 'nca/vim-localrc'
+Plugin 'embear/vim-localvimrc'
 
 "------------------=== status/tabline ===---------------
 Plugin 'vim-airline/vim-airline'
